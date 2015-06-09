@@ -1,17 +1,19 @@
 Tweet.FeedController = Ember.ArrayController.extend({
   sortProperties: ['date'],
   sortAscending: false,
-  body: null,
-  id: null,
-  date: null,
+  charCounter: 140,
   actions: {
     tweet: function() {
-      var body = this.get('body');
-      var id = Math.floor(Math.random() * 250);
-      var date = new Date();
-      var object = {id: id, body: body, date: date};
-      debugger;
-      tweets.addObject(object);
+      this.set('charCounter', 140-this.get('body').length)
+      var body = this.get('body')
+      if (body.length > 140) {
+        alert('yo dawg I heard you like tweets but to tweet you gotta tweet you tweets under 140 tweets')
+      } else {
+        var id = tweets.length + 1
+        var object = {id: id, body: body, date: new Date()};
+        tweets.addObject(object);
+      }
+        this.set('body', '')
     }
   }
 });

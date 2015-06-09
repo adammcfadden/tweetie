@@ -1,12 +1,14 @@
-<form {{action 'tweet' on='submit'}}>
-  <p>
-    {{input type="text" valueBinding="body"}}
-  </p>
+<div class="form-group">
+  <form {{action 'tweet' on='submit'}}>
+    <p>
+      {{textarea cols="4" id="tweet-box" class="form-control" type="text" valueBinding="body" placeholder="Enter your tweet (140 char limit)"}}
+    </p>
+    <button class="btn btn-large">submit</button>
+  </form>
+</div>
+<div id="char-left">
 
-  <!-- <label for="tweet">Tweet</label>
-  <textarea name="body" cols="4"></textarea> -->
-  <button>submit</button>
-</form>
+</div>
 
 
 
