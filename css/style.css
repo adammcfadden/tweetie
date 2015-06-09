@@ -6,6 +6,6 @@
   margin-top: 100px;
 }
 
-.tweet-details {
-  display:none;
+#page-header:hover {
+  opacity: 0.4;
 }
