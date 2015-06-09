@@ -17,4 +17,5 @@ $(document).ready(function() {
       $('#char-left').removeClass();
       $('#char-left').text(text_max + ' characters remaining');
     });
+
 });

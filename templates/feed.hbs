@@ -8,8 +8,13 @@
   </form>
 </div>
 
+{{#if showDetails}}
+  {{outlet}}
+{{else}}
 <ul>
   {{#each}}
-    <li>{{body}}</li>
+    <li {{action 'details'}}>{{#link-to 'tweet' this.id}}{{body}}{{/link-to}}</li>
+
   {{/each}}
 </ul>
+{{/if}}
