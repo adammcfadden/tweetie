@@ -1,1 +1,12 @@
-<h1>details!1!!</h1>
+<h1>{{this.body}}</h1>
+<h3>{{this.formattedDate}}</h3>
+
+<div class="form-group">
+  <form {{action 'comment' on='submit'}}>
+    <p>
+      {{textarea cols="4" id="comment-box" class="form-control" type="text" valueBinding="comment" placeholder="Enter your comment (140 char limit)"}}
+    </p>
+    <button id ="add-comment"class="btn btn-large">submit</button>
+    <span align="right" id="char-left" style="float: right;"></span>
+  </form>
+</div>

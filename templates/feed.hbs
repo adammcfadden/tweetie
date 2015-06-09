@@ -1,3 +1,7 @@
+{{#if showDetails}}
+  {{outlet}}
+  <button {{action 'detailsHide'}}>Back to Feed</button>
+{{else}}
 <div class="form-group">
   <form {{action 'tweet' on='submit'}}>
     <p>
@@ -8,13 +12,11 @@
   </form>
 </div>
 
-{{#if showDetails}}
-  {{outlet}}
-{{else}}
-<ul>
-  {{#each}}
-    <li {{action 'details'}}>{{#link-to 'tweet' this.id}}{{body}}{{/link-to}}</li>
 
-  {{/each}}
-</ul>
+
+{{#each}}
+  <li {{action 'details'}}>{{#link-to 'tweet' this.id}}{{body}}{{/link-to}}</li>
+  <div class="tweet-details">
+  </div>
+{{/each}}
 {{/if}}

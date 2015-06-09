@@ -5,3 +5,7 @@
 #main-content {
   margin-top: 100px;
 }
+
+.tweet-details {
+  display:none;
+}
