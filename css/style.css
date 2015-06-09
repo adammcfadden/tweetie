@@ -2,3 +2,6 @@
 .ember-application {
     margin: 20px;
 }
+#main-content {
+  margin-top: 100px;
+}

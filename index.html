@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Young Frankies blog</title>
+    <title>Tweetie</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
@@ -19,12 +19,17 @@
     <script src="store.js"></script>
 
     <!--routes -->
+    <script src="routes/feed.js"></script>
+
 
 
     <!--controllers-->
+    <script src="controllers/feed.js"></script>
+
+
 
     <script>
-      EmberHandlebarsLoader.loadTemplates([]);
+      EmberHandlebarsLoader.loadTemplates(['feed', 'application']);
     </script>
 
   </body>

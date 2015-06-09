@@ -1,0 +1,1 @@
+Tweet = Ember.Application.create();
