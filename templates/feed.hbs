@@ -1,3 +1,15 @@
+<form {{action 'tweet' on='submit'}}>
+  <p>
+    {{input type="text" valueBinding="body"}}
+  </p>
+
+  <!-- <label for="tweet">Tweet</label>
+  <textarea name="body" cols="4"></textarea> -->
+  <button>submit</button>
+</form>
+
+
+
 <ul>
   {{#each}}
     <li>{{body}}</li>
