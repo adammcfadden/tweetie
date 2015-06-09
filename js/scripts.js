@@ -12,4 +12,9 @@ $(document).ready(function() {
       }
         $('#char-left').text(text_remaining + ' characters remaining');
     });
+
+    $("#add-tweet").click(function() {
+      $('#char-left').removeClass();
+      $('#char-left').text(text_max + ' characters remaining');
+    });
 });

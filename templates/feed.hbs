@@ -3,14 +3,10 @@
     <p>
       {{textarea cols="4" id="tweet-box" class="form-control" type="text" valueBinding="body" placeholder="Enter your tweet (140 char limit)"}}
     </p>
-    <button class="btn btn-large">submit</button>
+    <button id ="add-tweet"class="btn btn-large">submit</button>
+    <span align="right" id="char-left" style="float: right;"></span>
   </form>
 </div>
-<div id="char-left">
-
-</div>
-
-
 
 <ul>
   {{#each}}
